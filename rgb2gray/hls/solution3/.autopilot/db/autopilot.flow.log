@@ -1,0 +1,1225 @@
+INFO-FLOW: Workspace G:/HLS/project/rgb2gray/rgb2gray.prj/solution3 opened at Sat Aug 01 11:37:36 +0800 2020
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Command     import_lib done; 0.216 sec.
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.189 sec.
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.279 sec.
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.282 sec.
+Command     ap_source done; 0.282 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+Execute       get_default_platform 
+Command     set_part done; 0.134 sec.
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.757 sec.
+Execute   set_part xc7z020clg400-1 
+Execute     add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute   config_export -format ip_catalog -rtl verilog 
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     config_compile -blackbox  
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'rgb2gray.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling rgb2gray.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted rgb2gray.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "F:/Xilinx/Vivado/2018.3/msys" -hls  -fno-exceptions  -D__llvm__  -E "rgb2gray.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "F:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "F:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.pp.0.cpp" 
+INFO-FLOW: exec F:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain F:/Xilinx/Vivado/2018.3/msys -hls -fno-exceptions -D__llvm__ -E rgb2gray.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I F:/Xilinx/Vivado/2018.3/common/technology/autopilot -I F:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.pp.0.cpp
+Command       clang done; 2.796 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec F:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.536 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "F:/Xilinx/Vivado/2018.3/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "F:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "F:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.pp.0.cpp"  -o "G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/useless.bc"  
+INFO-FLOW: exec F:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain F:/Xilinx/Vivado/2018.3/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I F:/Xilinx/Vivado/2018.3/common/technology/autopilot -I F:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.pp.0.cpp -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/useless.bc
+Command       clang done; 4.93 sec.
+INFO-FLOW: Done: GCC PP time: 9.3 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.pp.0.cpp std=gnu++98 -directive=G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec F:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/.systemc_flag -quiet -fix-errors G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.396 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.pp.0.cpp std=gnu++98 -directive=G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/all.directive.json 
+INFO-FLOW: exec F:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/all.directive.json -quiet -fix-errors G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.389 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr F:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/xilinx-dataflow-lawyer.rgb2gray.pp.0.cpp.diag.yml G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/xilinx-dataflow-lawyer.rgb2gray.pp.0.cpp.out.log 2> G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/xilinx-dataflow-lawyer.rgb2gray.pp.0.cpp.err.log 
+Command       ap_eval done; 1.806 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr F:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/tidy-3.1.rgb2gray.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/tidy-3.1.rgb2gray.pp.0.cpp.out.log 2> G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/tidy-3.1.rgb2gray.pp.0.cpp.err.log 
+Command         ap_eval done; 1.716 sec.
+Execute         ap_eval exec -ignorestderr F:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/xilinx-legacy-rewriter.rgb2gray.pp.0.cpp.out.log 2> G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/xilinx-legacy-rewriter.rgb2gray.pp.0.cpp.err.log 
+Command         ap_eval done; 1.339 sec.
+Command       tidy_31 done; 3.088 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 6.3 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec F:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 2.797 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain F:/Xilinx/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "F:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "F:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.bc" 
+INFO-FLOW: exec F:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain F:/Xilinx/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I F:/Xilinx/Vivado/2018.3/common/technology/autopilot -I F:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.bc
+Command       clang done; 5.187 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.g.bc -hls-opt -except-internalize rgb2gray -LF:/Xilinx/Vivado/2018.3/win64/lib -lhlsm -lhlsmc++ -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/a.g 
+Command       llvm-ld done; 1.914 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:31 . Memory (MB): peak = 104.820 ; gain = 21.535
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:31 . Memory (MB): peak = 104.820 ; gain = 21.535
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/a.pp.bc -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 0.265 sec.
+Execute         llvm-ld G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/a.pp.0.bc -disable-opt -LF:/Xilinx/Vivado/2018.3/win64/lib -lfloatconversion -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/a.g.0 
+Command         llvm-ld done; 1.408 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -lower-blackbox -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top rgb2gray -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/a.g.0.bc -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:677) in function 'hls::Mat<720, 1280, 0>::read()' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:701) in function 'hls::Mat<720, 1280, 0>::write(hls::Scalar<1, unsigned char>)' completely with a factor of 1.
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 4096>::init' into 'hls::Mat<720, 1280, 4096>::Mat.1' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:642).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::init' into 'hls::Mat<720, 1280, 0>::Mat.1' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:642).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<32, unsigned char>.1' into 'hls::AXIGetBitFields<32, unsigned char>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h:71).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<32, unsigned char>' into 'hls::AXIvideo2Mat<32, 720, 1280, 4096>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:92).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 4096>::write' into 'hls::Mat<720, 1280, 4096>::operator<<' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 4096>::operator<<' into 'hls::CvtColor<HLS_GRAY2RGB, 0, 4096, 720, 1280>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1973).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 4096>::operator<<' into 'hls::AXIvideo2Mat<32, 720, 1280, 4096>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:94).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 4096>::read' into 'hls::Mat<720, 1280, 4096>::operator>>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 4096>::operator>>' into 'hls::Mat2AXIvideo<32, 720, 1280, 4096>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:140).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 4096>::operator>>' into 'hls::CvtColor<HLS_RGB2GRAY, 4096, 0, 720, 1280>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1971).
+INFO: [XFORM 203-603] Inlining function 'hls::ColorConverter<unsigned char, unsigned char>::convert<3>' into 'hls::kernel_CvtColor<HLS_RGB2GRAY, unsigned char, unsigned char>::apply<3, 1>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1545).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::write' into 'hls::Mat<720, 1280, 0>::operator<<' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::operator<<' into 'hls::CvtColor<HLS_RGB2GRAY, 4096, 0, 720, 1280>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1973).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::read' into 'hls::Mat<720, 1280, 0>::operator>>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 0>::operator>>' into 'hls::CvtColor<HLS_GRAY2RGB, 0, 4096, 720, 1280>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1971).
+INFO: [XFORM 203-603] Inlining function 'hls::kernel_CvtColor<HLS_GRAY2RGB, unsigned char, unsigned char>::apply<1, 3>' into 'hls::CvtColor<HLS_GRAY2RGB, 0, 4096, 720, 1280>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1972).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<32, unsigned char>.1' into 'hls::AXISetBitFields<32, unsigned char>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h:100).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<32, unsigned char>' into 'hls::Mat2AXIvideo<32, 720, 1280, 4096>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:143).
+Command         transform done; 1.154 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:33 . Memory (MB): peak = 162.699 ; gain = 79.414
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/a.g.1.bc -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast_class<ap_uint<8> >::operator()<35, 13, (ap_q_mode)5, (ap_o_mode)3>' into 'hls::sr_cast<unsigned char, ap_fixed<35, 13, (ap_q_mode)5, (ap_o_mode)3, 0> >' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_types.h:500) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast<unsigned char, ap_fixed<35, 13, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'hls::kernel_CvtColor<HLS_RGB2GRAY, unsigned char, unsigned char>::apply<3, 1>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1498->F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1545) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast_class<ap_uint<8> >::operator()<8>' into 'hls::sr_cast_class<ap_uint<8> >::operator()' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_types.h:432) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast_class<ap_uint<8> >::operator()' into 'hls::sr_cast<unsigned char, unsigned char>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_types.h:500) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast<unsigned char, unsigned char>' into 'hls::CvtColor<HLS_GRAY2RGB, 0, 4096, 720, 1280>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1554->F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1972) automatically.
+Command         transform done; 0.664 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/a.g.2.prechk.bc -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/a.g.2.bc -f -phase syn-check 
+WARNING: [SYNCHK 200-23] F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h:78: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+Command         transform done; 0.286 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:34 . Memory (MB): peak = 201.898 ; gain = 118.613
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/a.g.1.bc to G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/a.o.1.bc -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/a.o.1.tmp.bc -f 
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'img_1.data_stream.V' (rgb2gray.cpp:15).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'img_2.data_stream.V' (rgb2gray.cpp:16).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'img_0.data_stream.V' (rgb2gray.cpp:14).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:126) in function 'hls::Mat2AXIvideo<32, 720, 1280, 4096>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1968) in function 'hls::CvtColor<HLS_RGB2GRAY, 4096, 0, 720, 1280>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1968) in function 'hls::CvtColor<HLS_GRAY2RGB, 0, 4096, 720, 1280>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:73) in function 'hls::AXIvideo2Mat<32, 720, 1280, 4096>' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:677) in function 'hls::Mat2AXIvideo<32, 720, 1280, 4096>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'loop_channels' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:142) in function 'hls::Mat2AXIvideo<32, 720, 1280, 4096>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:677) in function 'hls::CvtColor<HLS_RGB2GRAY, 4096, 0, 720, 1280>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:701) in function 'hls::CvtColor<HLS_GRAY2RGB, 0, 4096, 720, 1280>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'loop_channels' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:91) in function 'hls::AXIvideo2Mat<32, 720, 1280, 4096>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.2' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:701) in function 'hls::AXIvideo2Mat<32, 720, 1280, 4096>' completely with a factor of 3.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'img_0.data_stream.V' (rgb2gray.cpp:14) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'img_1.data_stream.V' (rgb2gray.cpp:15) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'img_2.data_stream.V' (rgb2gray.cpp:16) .
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:115) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_opr.par.val.V' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1960) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array '_s.val' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1965) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array '_d.val' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1966) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array '_s.val' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1965) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array '_d.val' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1966) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'img_0.data_stream.V' (rgb2gray.cpp:14) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'img_1.data_stream.V' (rgb2gray.cpp:15) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'img_2.data_stream.V' (rgb2gray.cpp:16) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast_class<ap_uint<8> >::operator()<35, 13, (ap_q_mode)5, (ap_o_mode)3>' into 'hls::sr_cast<unsigned char, ap_fixed<35, 13, (ap_q_mode)5, (ap_o_mode)3, 0> >' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_types.h:500) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast<unsigned char, ap_fixed<35, 13, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'hls::kernel_CvtColor<HLS_RGB2GRAY, unsigned char, unsigned char>::apply<3, 1>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1498->F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1545) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::kernel_CvtColor<HLS_RGB2GRAY, unsigned char, unsigned char>::apply<3, 1>' into 'hls::CvtColor<HLS_RGB2GRAY, 4096, 0, 720, 1280>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1972) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast_class<ap_uint<8> >::operator()<8>' into 'hls::sr_cast_class<ap_uint<8> >::operator()' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_types.h:432) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast_class<ap_uint<8> >::operator()' into 'hls::sr_cast<unsigned char, unsigned char>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_types.h:500) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast<unsigned char, unsigned char>' into 'hls::CvtColor<HLS_GRAY2RGB, 0, 4096, 720, 1280>' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1554->F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1972) automatically.
+INFO: [XFORM 203-712] Applying dataflow to function 'rgb2gray', detected/extracted 5 process function(s): 
+	 'Block_Mat.exit47_proc'
+	 'hls::AXIvideo2Mat<32, 720, 1280, 4096>'
+	 'hls::CvtColor<HLS_RGB2GRAY, 4096, 0, 720, 1280>'
+	 'hls::CvtColor<HLS_GRAY2RGB, 0, 4096, 720, 1280>'
+	 'hls::Mat2AXIvideo<32, 720, 1280, 4096>'.
+Command         transform done; 2.136 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/a.o.1.tmp.bc -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command         transform done; 0.945 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:37 . Memory (MB): peak = 263.258 ; gain = 179.973
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -cdfg-build G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/a.o.2.bc -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo<32, 720, 1280, 4096>' to 'Mat2AXIvideo' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:78:50)
+WARNING: [XFORM 203-631] Renaming function 'hls::CvtColor<HLS_RGB2GRAY, 4096, 0, 720, 1280>' to 'CvtColor' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:409:39)
+WARNING: [XFORM 203-631] Renaming function 'hls::CvtColor<HLS_GRAY2RGB, 0, 4096, 720, 1280>' to 'CvtColor.1' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:672:39)
+WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat<32, 720, 1280, 4096>' to 'AXIvideo2Mat' (F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:49:9)
+WARNING: [XFORM 203-631] Renaming function 'Block_Mat.exit47_proc' to 'Block_Mat.exit47_pro' (rgb2gray.cpp:14)
+Command         transform done; 1.719 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:39 . Memory (MB): peak = 321.199 ; gain = 237.914
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 8.682 sec.
+Command     elaborate done; 36.141 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'rgb2gray' ...
+Execute       ap_set_top_model rgb2gray 
+WARNING: [SYN 201-103] Legalizing function name 'Block_Mat.exit47_pro' to 'Block_Mat_exit47_pro'.
+WARNING: [SYN 201-103] Legalizing function name 'CvtColor.1' to 'CvtColor_1'.
+Execute       get_model_list rgb2gray -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model rgb2gray 
+Execute       preproc_iomode -model Mat2AXIvideo 
+Execute       preproc_iomode -model CvtColor.1 
+Execute       preproc_iomode -model CvtColor 
+Execute       preproc_iomode -model AXIvideo2Mat 
+Execute       preproc_iomode -model Block_Mat.exit47_pro 
+Execute       get_model_list rgb2gray -filter all-wo-channel 
+INFO-FLOW: Model list for configure: Block_Mat.exit47_pro AXIvideo2Mat CvtColor CvtColor.1 Mat2AXIvideo rgb2gray
+INFO-FLOW: Configuring Module : Block_Mat.exit47_pro ...
+Execute       set_default_model Block_Mat.exit47_pro 
+Execute       apply_spec_resource_limit Block_Mat.exit47_pro 
+INFO-FLOW: Configuring Module : AXIvideo2Mat ...
+Execute       set_default_model AXIvideo2Mat 
+Execute       apply_spec_resource_limit AXIvideo2Mat 
+INFO-FLOW: Configuring Module : CvtColor ...
+Execute       set_default_model CvtColor 
+Execute       apply_spec_resource_limit CvtColor 
+INFO-FLOW: Configuring Module : CvtColor.1 ...
+Execute       set_default_model CvtColor.1 
+Execute       apply_spec_resource_limit CvtColor.1 
+INFO-FLOW: Configuring Module : Mat2AXIvideo ...
+Execute       set_default_model Mat2AXIvideo 
+Execute       apply_spec_resource_limit Mat2AXIvideo 
+INFO-FLOW: Configuring Module : rgb2gray ...
+Execute       set_default_model rgb2gray 
+Execute       apply_spec_resource_limit rgb2gray 
+INFO-FLOW: Model list for preprocess: Block_Mat.exit47_pro AXIvideo2Mat CvtColor CvtColor.1 Mat2AXIvideo rgb2gray
+INFO-FLOW: Preprocessing Module: Block_Mat.exit47_pro ...
+Execute       set_default_model Block_Mat.exit47_pro 
+Execute       cdfg_preprocess -model Block_Mat.exit47_pro 
+Execute       rtl_gen_preprocess Block_Mat.exit47_pro 
+INFO-FLOW: Preprocessing Module: AXIvideo2Mat ...
+Execute       set_default_model AXIvideo2Mat 
+Execute       cdfg_preprocess -model AXIvideo2Mat 
+Execute       rtl_gen_preprocess AXIvideo2Mat 
+INFO-FLOW: Preprocessing Module: CvtColor ...
+Execute       set_default_model CvtColor 
+Execute       cdfg_preprocess -model CvtColor 
+Execute       rtl_gen_preprocess CvtColor 
+INFO-FLOW: Preprocessing Module: CvtColor.1 ...
+Execute       set_default_model CvtColor.1 
+Execute       cdfg_preprocess -model CvtColor.1 
+Execute       rtl_gen_preprocess CvtColor.1 
+INFO-FLOW: Preprocessing Module: Mat2AXIvideo ...
+Execute       set_default_model Mat2AXIvideo 
+Execute       cdfg_preprocess -model Mat2AXIvideo 
+Execute       rtl_gen_preprocess Mat2AXIvideo 
+INFO-FLOW: Preprocessing Module: rgb2gray ...
+Execute       set_default_model rgb2gray 
+Execute       cdfg_preprocess -model rgb2gray 
+Execute       rtl_gen_preprocess rgb2gray 
+INFO-FLOW: Model list for synthesis: Block_Mat.exit47_pro AXIvideo2Mat CvtColor CvtColor.1 Mat2AXIvideo rgb2gray
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_Mat_exit47_pro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Block_Mat.exit47_pro 
+Execute       schedule -model Block_Mat.exit47_pro 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.332 sec.
+INFO: [HLS 200-111]  Elapsed time: 39.689 seconds; current allocated memory: 262.781 MB.
+Execute       report -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Block_Mat_exit47_pro.verbose.sched.rpt -verbose -f 
+Execute       db_write -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Block_Mat_exit47_pro.sched.adb -f 
+INFO-FLOW: Finish scheduling Block_Mat.exit47_pro.
+Execute       set_default_model Block_Mat.exit47_pro 
+Execute       bind -model Block_Mat.exit47_pro 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Block_Mat.exit47_pro
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.141 seconds; current allocated memory: 262.878 MB.
+Execute       report -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Block_Mat_exit47_pro.verbose.bind.rpt -verbose -f 
+Execute       db_write -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Block_Mat_exit47_pro.bind.adb -f 
+INFO-FLOW: Finish binding Block_Mat.exit47_pro.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2Mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model AXIvideo2Mat 
+Execute       schedule -model AXIvideo2Mat 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_start'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.487 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.648 seconds; current allocated memory: 263.143 MB.
+Execute       report -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/AXIvideo2Mat.verbose.sched.rpt -verbose -f 
+INFO: [HLS 200-434] Only 3 loops out of a total 4 loops have been pipelined in this design.
+Execute       db_write -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/AXIvideo2Mat.sched.adb -f 
+INFO-FLOW: Finish scheduling AXIvideo2Mat.
+Execute       set_default_model AXIvideo2Mat 
+Execute       bind -model AXIvideo2Mat 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=AXIvideo2Mat
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.247 seconds; current allocated memory: 263.490 MB.
+Execute       report -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/AXIvideo2Mat.verbose.bind.rpt -verbose -f 
+Execute       db_write -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/AXIvideo2Mat.bind.adb -f 
+INFO-FLOW: Finish binding AXIvideo2Mat.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CvtColor' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model CvtColor 
+Execute       schedule -model CvtColor 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+WARNING: [SCHED 204-21] Estimated clock period (9.4ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'CvtColor' consists of the following:
+	'mul' operation of DSP[51] ('r.V', F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1495->F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1545->F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1972) [49]  (3.36 ns)
+	'add' operation of DSP[51] ('ret.V', F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1497->F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1545->F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1972) [51]  (3.02 ns)
+	'add' operation of DSP[53] ('ret.V', F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1497->F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1545->F:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1972) [53]  (3.02 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.434 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.622 seconds; current allocated memory: 263.720 MB.
+Execute       report -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor.verbose.sched.rpt -verbose -f 
+Execute       db_write -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor.sched.adb -f 
+INFO-FLOW: Finish scheduling CvtColor.
+Execute       set_default_model CvtColor 
+Execute       bind -model CvtColor 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=CvtColor
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.215 seconds; current allocated memory: 263.939 MB.
+Execute       report -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor.verbose.bind.rpt -verbose -f 
+Execute       db_write -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor.bind.adb -f 
+INFO-FLOW: Finish binding CvtColor.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CvtColor_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model CvtColor.1 
+Execute       schedule -model CvtColor.1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.369 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.537 seconds; current allocated memory: 264.106 MB.
+Execute       report -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor_1.verbose.sched.rpt -verbose -f 
+Execute       db_write -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor_1.sched.adb -f 
+INFO-FLOW: Finish scheduling CvtColor.1.
+Execute       set_default_model CvtColor.1 
+Execute       bind -model CvtColor.1 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=CvtColor.1
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.224 seconds; current allocated memory: 264.256 MB.
+Execute       report -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor_1.verbose.bind.rpt -verbose -f 
+Execute       db_write -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor_1.bind.adb -f 
+INFO-FLOW: Finish binding CvtColor.1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Mat2AXIvideo 
+Execute       schedule -model Mat2AXIvideo 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.321 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.476 seconds; current allocated memory: 264.363 MB.
+Execute       report -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Mat2AXIvideo.verbose.sched.rpt -verbose -f 
+Execute       db_write -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Mat2AXIvideo.sched.adb -f 
+INFO-FLOW: Finish scheduling Mat2AXIvideo.
+Execute       set_default_model Mat2AXIvideo 
+Execute       bind -model Mat2AXIvideo 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Mat2AXIvideo
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.204 seconds; current allocated memory: 264.609 MB.
+Execute       report -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Mat2AXIvideo.verbose.bind.rpt -verbose -f 
+Execute       db_write -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Mat2AXIvideo.bind.adb -f 
+INFO-FLOW: Finish binding Mat2AXIvideo.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'rgb2gray' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model rgb2gray 
+Execute       schedule -model rgb2gray 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.207 seconds; current allocated memory: 264.760 MB.
+Execute       report -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.verbose.sched.rpt -verbose -f 
+Execute       db_write -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.sched.adb -f 
+INFO-FLOW: Finish scheduling rgb2gray.
+Execute       set_default_model rgb2gray 
+Execute       bind -model rgb2gray 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=rgb2gray
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.189 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.312 seconds; current allocated memory: 265.166 MB.
+Execute       report -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.verbose.bind.rpt -verbose -f 
+Execute       db_write -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.bind.adb -f 
+INFO-FLOW: Finish binding rgb2gray.
+Execute       get_model_list rgb2gray -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess Block_Mat.exit47_pro 
+Execute       rtl_gen_preprocess AXIvideo2Mat 
+Execute       rtl_gen_preprocess CvtColor 
+Execute       rtl_gen_preprocess CvtColor.1 
+Execute       rtl_gen_preprocess Mat2AXIvideo 
+Execute       rtl_gen_preprocess rgb2gray 
+INFO-FLOW: Model list for RTL generation: Block_Mat.exit47_pro AXIvideo2Mat CvtColor CvtColor.1 Mat2AXIvideo rgb2gray
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_Mat_exit47_pro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Block_Mat.exit47_pro -vendor xilinx -mg_file G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Block_Mat_exit47_pro.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_Mat_exit47_pro'.
+INFO: [HLS 200-111]  Elapsed time: 0.244 seconds; current allocated memory: 265.318 MB.
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Block_Mat.exit47_pro -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/systemc/Block_Mat_exit47_pro -synmodules Block_Mat.exit47_pro AXIvideo2Mat CvtColor CvtColor.1 Mat2AXIvideo rgb2gray 
+Execute       gen_rtl Block_Mat.exit47_pro -style xilinx -f -lang vhdl -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/vhdl/Block_Mat_exit47_pro 
+Execute       gen_rtl Block_Mat.exit47_pro -style xilinx -f -lang vlog -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/verilog/Block_Mat_exit47_pro 
+Execute       gen_tb_info Block_Mat.exit47_pro -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Block_Mat_exit47_pro -p G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db 
+Execute       report -model Block_Mat.exit47_pro -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/report/Block_Mat_exit47_pro_csynth.rpt -f 
+Execute       report -model Block_Mat.exit47_pro -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/report/Block_Mat_exit47_pro_csynth.xml -f -x 
+Execute       report -model Block_Mat.exit47_pro -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Block_Mat_exit47_pro.verbose.rpt -verbose -f 
+Execute       db_write -model Block_Mat.exit47_pro -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Block_Mat_exit47_pro.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2Mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model AXIvideo2Mat -vendor xilinx -mg_file G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2Mat'.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 266.325 MB.
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.rtl_wrap.cfg.tcl 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/systemc/AXIvideo2Mat -synmodules Block_Mat.exit47_pro AXIvideo2Mat CvtColor CvtColor.1 Mat2AXIvideo rgb2gray 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -f -lang vhdl -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/vhdl/AXIvideo2Mat 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -f -lang vlog -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/verilog/AXIvideo2Mat 
+Execute       gen_tb_info AXIvideo2Mat -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/AXIvideo2Mat -p G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db 
+Execute       report -model AXIvideo2Mat -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/report/AXIvideo2Mat_csynth.rpt -f 
+Execute       report -model AXIvideo2Mat -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/report/AXIvideo2Mat_csynth.xml -f -x 
+Execute       report -model AXIvideo2Mat -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/AXIvideo2Mat.verbose.rpt -verbose -f 
+Execute       db_write -model AXIvideo2Mat -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/AXIvideo2Mat.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CvtColor' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model CvtColor -vendor xilinx -mg_file G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'rgb2gray_mul_mul_22ns_8ns_29_1_1' to 'rgb2gray_mul_mul_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rgb2gray_mac_muladd_23ns_8ns_29ns_30_1_1' to 'rgb2gray_mac_mulacud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rgb2gray_mac_muladd_20ns_8ns_29ns_29_1_1' to 'rgb2gray_mac_muladEe' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'rgb2gray_mac_mulacud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'rgb2gray_mac_muladEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'rgb2gray_mul_mul_bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CvtColor'.
+Command       create_rtl_model done; 0.119 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.651 seconds; current allocated memory: 266.804 MB.
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.rtl_wrap.cfg.tcl 
+Execute       gen_rtl CvtColor -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/systemc/CvtColor -synmodules Block_Mat.exit47_pro AXIvideo2Mat CvtColor CvtColor.1 Mat2AXIvideo rgb2gray 
+Execute       gen_rtl CvtColor -style xilinx -f -lang vhdl -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/vhdl/CvtColor 
+Execute       gen_rtl CvtColor -style xilinx -f -lang vlog -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/verilog/CvtColor 
+Execute       gen_tb_info CvtColor -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor -p G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db 
+Execute       report -model CvtColor -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/report/CvtColor_csynth.rpt -f 
+Execute       report -model CvtColor -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/report/CvtColor_csynth.xml -f -x 
+Execute       report -model CvtColor -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor.verbose.rpt -verbose -f 
+Execute       db_write -model CvtColor -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CvtColor_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model CvtColor.1 -vendor xilinx -mg_file G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor_1.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CvtColor_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.461 seconds; current allocated memory: 267.156 MB.
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.rtl_wrap.cfg.tcl 
+Execute       gen_rtl CvtColor.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/systemc/CvtColor_1 -synmodules Block_Mat.exit47_pro AXIvideo2Mat CvtColor CvtColor.1 Mat2AXIvideo rgb2gray 
+Execute       gen_rtl CvtColor.1 -style xilinx -f -lang vhdl -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/vhdl/CvtColor_1 
+Execute       gen_rtl CvtColor.1 -style xilinx -f -lang vlog -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/verilog/CvtColor_1 
+Execute       gen_tb_info CvtColor.1 -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor_1 -p G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db 
+Execute       report -model CvtColor.1 -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/report/CvtColor_1_csynth.rpt -f 
+Execute       report -model CvtColor.1 -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/report/CvtColor_1_csynth.xml -f -x 
+Execute       report -model CvtColor.1 -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor_1.verbose.rpt -verbose -f 
+Execute       db_write -model CvtColor.1 -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor_1.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Mat2AXIvideo -vendor xilinx -mg_file G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Mat2AXIvideo'.
+INFO: [HLS 200-111]  Elapsed time: 0.427 seconds; current allocated memory: 267.975 MB.
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/systemc/Mat2AXIvideo -synmodules Block_Mat.exit47_pro AXIvideo2Mat CvtColor CvtColor.1 Mat2AXIvideo rgb2gray 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -f -lang vhdl -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/vhdl/Mat2AXIvideo 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -f -lang vlog -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/verilog/Mat2AXIvideo 
+Execute       gen_tb_info Mat2AXIvideo -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Mat2AXIvideo -p G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db 
+Execute       report -model Mat2AXIvideo -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/report/Mat2AXIvideo_csynth.rpt -f 
+Execute       report -model Mat2AXIvideo -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/report/Mat2AXIvideo_csynth.xml -f -x 
+Execute       report -model Mat2AXIvideo -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Mat2AXIvideo.verbose.rpt -verbose -f 
+Execute       db_write -model Mat2AXIvideo -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Mat2AXIvideo.adb -f 
+Command       db_write done; 0.167 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'rgb2gray' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model rgb2gray -vendor xilinx -mg_file G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'rgb2gray/INPUT_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'rgb2gray/INPUT_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'rgb2gray/INPUT_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'rgb2gray/INPUT_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'rgb2gray/INPUT_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'rgb2gray/INPUT_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'rgb2gray/INPUT_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'rgb2gray/OUTPUT_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'rgb2gray/OUTPUT_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'rgb2gray/OUTPUT_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'rgb2gray/OUTPUT_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'rgb2gray/OUTPUT_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'rgb2gray/OUTPUT_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'rgb2gray/OUTPUT_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'rgb2gray/rows' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'rgb2gray/cols' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'rgb2gray' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Bundling port 'rows' and 'cols' to AXI-Lite port CONTROL_BUS.
+INFO: [RTGEN 206-100] Generated clock port 'AXI_LITE_clk' for AXI-Lite bundle 'CONTROL_BUS'.
+INFO: [SYN 201-210] Renamed object name 'start_for_CvtColor_1_U0' to 'start_for_CvtColoeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Mat2AXIvideo_U0' to 'start_for_Mat2AXIfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_CvtColor_U0' to 'start_for_CvtColog8j' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'rgb2gray'.
+Command       create_rtl_model done; 0.359 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.925 seconds; current allocated memory: 268.962 MB.
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.rtl_wrap.cfg.tcl 
+Execute       gen_rtl rgb2gray -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/systemc/rgb2gray -synmodules Block_Mat.exit47_pro AXIvideo2Mat CvtColor CvtColor.1 Mat2AXIvideo rgb2gray 
+Execute       gen_rtl rgb2gray -istop -style xilinx -f -lang vhdl -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/vhdl/rgb2gray 
+Execute       gen_rtl rgb2gray -istop -style xilinx -f -lang vlog -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/verilog/rgb2gray 
+Execute       export_constraint_db -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.constraint.tcl -f -tool general 
+Execute       report -model rgb2gray -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.design.xml -verbose -f -dv 
+Command       report done; 0.242 sec.
+Execute       report -model rgb2gray -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.sdaccel.xml -verbose -f -sdaccel 
+Command       report done; 0.101 sec.
+Execute       gen_tb_info rgb2gray -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray -p G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db 
+Execute       report -model rgb2gray -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/report/rgb2gray_csynth.rpt -f 
+Execute       report -model rgb2gray -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/syn/report/rgb2gray_csynth.xml -f -x 
+Execute       report -model rgb2gray -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.verbose.rpt -verbose -f 
+Command       report done; 0.13 sec.
+Execute       db_write -model rgb2gray -o G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.adb -f 
+Command       db_write done; 0.11 sec.
+Execute       sc_get_clocks rgb2gray 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain rgb2gray 
+INFO-FLOW: Model list for RTL component generation: Block_Mat.exit47_pro AXIvideo2Mat CvtColor CvtColor.1 Mat2AXIvideo rgb2gray
+INFO-FLOW: Handling components in module [Block_Mat_exit47_pro] ... 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Block_Mat_exit47_pro.compgen.tcl 
+INFO-FLOW: Handling components in module [AXIvideo2Mat] ... 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+INFO-FLOW: Handling components in module [CvtColor] ... 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor.compgen.tcl 
+INFO-FLOW: Found component rgb2gray_mul_mul_bkb.
+INFO-FLOW: Append model rgb2gray_mul_mul_bkb
+INFO-FLOW: Found component rgb2gray_mac_mulacud.
+INFO-FLOW: Append model rgb2gray_mac_mulacud
+INFO-FLOW: Found component rgb2gray_mac_muladEe.
+INFO-FLOW: Append model rgb2gray_mac_muladEe
+INFO-FLOW: Handling components in module [CvtColor_1] ... 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor_1.compgen.tcl 
+INFO-FLOW: Handling components in module [Mat2AXIvideo] ... 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+INFO-FLOW: Handling components in module [rgb2gray] ... 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.compgen.tcl 
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component fifo_w32_d4_A.
+INFO-FLOW: Append model fifo_w32_d4_A
+INFO-FLOW: Found component fifo_w32_d4_A.
+INFO-FLOW: Append model fifo_w32_d4_A
+INFO-FLOW: Found component fifo_w32_d5_A.
+INFO-FLOW: Append model fifo_w32_d5_A
+INFO-FLOW: Found component fifo_w32_d5_A.
+INFO-FLOW: Append model fifo_w32_d5_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component start_for_CvtColoeOg.
+INFO-FLOW: Append model start_for_CvtColoeOg
+INFO-FLOW: Found component start_for_Mat2AXIfYi.
+INFO-FLOW: Append model start_for_Mat2AXIfYi
+INFO-FLOW: Found component start_for_CvtColog8j.
+INFO-FLOW: Append model start_for_CvtColog8j
+INFO-FLOW: Found component rgb2gray_CONTROL_BUS_s_axi.
+INFO-FLOW: Append model rgb2gray_CONTROL_BUS_s_axi
+INFO-FLOW: Append model Block_Mat_exit47_pro
+INFO-FLOW: Append model AXIvideo2Mat
+INFO-FLOW: Append model CvtColor
+INFO-FLOW: Append model CvtColor_1
+INFO-FLOW: Append model Mat2AXIvideo
+INFO-FLOW: Append model rgb2gray
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: rgb2gray_mul_mul_bkb rgb2gray_mac_mulacud rgb2gray_mac_muladEe fifo_w32_d2_A fifo_w32_d2_A fifo_w32_d4_A fifo_w32_d4_A fifo_w32_d5_A fifo_w32_d5_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w32_d2_A fifo_w32_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A start_for_CvtColoeOg start_for_Mat2AXIfYi start_for_CvtColog8j rgb2gray_CONTROL_BUS_s_axi Block_Mat_exit47_pro AXIvideo2Mat CvtColor CvtColor_1 Mat2AXIvideo rgb2gray
+INFO-FLOW: To file: write model rgb2gray_mul_mul_bkb
+INFO-FLOW: To file: write model rgb2gray_mac_mulacud
+INFO-FLOW: To file: write model rgb2gray_mac_muladEe
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model fifo_w32_d4_A
+INFO-FLOW: To file: write model fifo_w32_d4_A
+INFO-FLOW: To file: write model fifo_w32_d5_A
+INFO-FLOW: To file: write model fifo_w32_d5_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model start_for_CvtColoeOg
+INFO-FLOW: To file: write model start_for_Mat2AXIfYi
+INFO-FLOW: To file: write model start_for_CvtColog8j
+INFO-FLOW: To file: write model rgb2gray_CONTROL_BUS_s_axi
+INFO-FLOW: To file: write model Block_Mat_exit47_pro
+INFO-FLOW: To file: write model AXIvideo2Mat
+INFO-FLOW: To file: write model CvtColor
+INFO-FLOW: To file: write model CvtColor_1
+INFO-FLOW: To file: write model Mat2AXIvideo
+INFO-FLOW: To file: write model rgb2gray
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d G:/HLS/project/rgb2gray/rgb2gray.prj/solution3
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source done; 0.106 sec.
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.159 sec.
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.163 sec.
+Command       ap_source done; 0.163 sec.
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Block_Mat_exit47_pro.compgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor.compgen.tcl 
+Command       ap_source done; 0.226 sec.
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor_1.compgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.compgen.tcl 
+INFO: [RTMG 210-285] Implementing FIFO 'img_0_rows_V_c_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_0_cols_V_c_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_1_rows_V_c_U(fifo_w32_d4_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_1_cols_V_c_U(fifo_w32_d4_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_2_rows_V_c_U(fifo_w32_d5_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_2_cols_V_c_U(fifo_w32_d5_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_0_data_stream_0_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_0_data_stream_1_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_0_data_stream_2_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_0_rows_V_c17_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_0_cols_V_c18_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_1_data_stream_0_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_2_data_stream_0_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_2_data_stream_1_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_2_data_stream_2_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_CvtColoeOg_U(start_for_CvtColoeOg)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Mat2AXIfYi_U(start_for_Mat2AXIfYi)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_CvtColog8j_U(start_for_CvtColog8j)' using Shift Registers.
+Execute         source ./CONTROL_BUS.slave.tcl 
+Execute         is_m_axi_addr64 
+Command       ap_source done; 0.829 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d G:/HLS/project/rgb2gray/rgb2gray.prj/solution3
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source done; 0.106 sec.
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.159 sec.
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.163 sec.
+Command       ap_source done; 0.164 sec.
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=rgb2gray xml_exists=0
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.rtl_wrap.cfg.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.rtl_wrap.cfg.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.rtl_wrap.cfg.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Block_Mat_exit47_pro.compgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor.compgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor_1.compgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Block_Mat_exit47_pro.compgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor.compgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor_1.compgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Block_Mat_exit47_pro.compgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor.compgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor_1.compgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.compgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.constraint.tcl 
+Execute       get_config_export -vivado_clock 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=28
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=16
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=28 #gSsdmPorts=28
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_export -xo 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.constraint.tcl 
+Execute       sc_get_clocks rgb2gray 
+Execute       source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       ::config_rtl 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist: G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:13 ; elapsed = 00:00:51 . Memory (MB): peak = 332.336 ; gain = 249.051
+INFO: [SYSC 207-301] Generating SystemC RTL for rgb2gray.
+INFO: [VHDL 208-304] Generating VHDL RTL for rgb2gray.
+INFO: [VLOG 209-307] Generating Verilog RTL for rgb2gray.
+Command     autosyn done; 12.018 sec.
+Execute     get_part 
+Execute     get_config_export -sdx_tcl 
+Command   csynth_design done; 48.191 sec.
+Command ap_source done; 49.048 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace G:/HLS/project/rgb2gray/rgb2gray.prj/solution3 opened at Sat Aug 01 11:38:57 +0800 2020
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.121 sec.
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.185 sec.
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.189 sec.
+Command     ap_source done; 0.189 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.367 sec.
+Execute   export_design -rtl verilog -format ip_catalog 
+Execute     get_config_export -acc 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -kernel_drc 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sdaccel 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -format=ip_catalog -rtl=verilog 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_sdx -target 
+Execute     get_config_rtl -auto_prefix 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl verilog -sdx-target none
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.126 sec.
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.201 sec.
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.205 sec.
+Command     ap_source done; 0.205 sec.
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.142 sec.
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.202 sec.
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.205 sec.
+Command     ap_source done; 0.205 sec.
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=rgb2gray xml_exists=1
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.rtl_wrap.cfg.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.rtl_wrap.cfg.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.rtl_wrap.cfg.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Block_Mat_exit47_pro.compgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor.compgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor_1.compgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Block_Mat_exit47_pro.compgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor.compgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor_1.compgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Block_Mat_exit47_pro.compgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor.compgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/CvtColor_1.compgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.compgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.constraint.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=28
+INFO-FLOW: DBG:CMD:       copy ip_driver_dir 1_0 G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/driver
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=28
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=rgb2gray
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.rtl_wrap.cfg.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.rtl_wrap.cfg.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.rtl_wrap.cfg.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=rgb2gray
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.rtl_wrap.cfg.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.rtl_wrap.cfg.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.rtl_wrap.cfg.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_bd_script
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.constraint.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.constraint.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/rgb2gray.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       copy-tb-rtl-files
+INFO-FLOW: DBG:CMD:       copy-tb-data-files
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO-FLOW: DBG:CMD: read_platform_lib G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/.autopilot/db/global.setting.tcl 
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.112 sec.
+Execute           source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.171 sec.
+Execute         source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.174 sec.
+Command     ap_source done; 0.174 sec.
+Execute     source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source F:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:     exec G:/HLS/project/rgb2gray/rgb2gray.prj/solution3/impl/ip/pack.bat
+Command   export_design done; 44.711 sec.
+Command ap_source done; 45.092 sec.
+Execute cleanup_all 
