@@ -40,7 +40,7 @@ Not Work
 
 #### rgb2gray
 
-Designed by Fu Guoyu
+Designed by Fu Guohang
 
 Not Work
 
