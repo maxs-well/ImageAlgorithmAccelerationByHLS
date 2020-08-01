@@ -8,13 +8,13 @@ Designed by woodfan
 
 Origin Picture:
 
-![](.\image\1.png)
+![](https://github.com/maxs-well/ImageAlgorithmAccelerationByHLS/blob/master/image/1.png)
 
 Processed picture:
 
-![](.\image\2.png)
+![](https://github.com/maxs-well/ImageAlgorithmAccelerationByHLS/blob/master/image/2.png)
 
-![](.\image\3.png)
+![](https://github.com/maxs-well/ImageAlgorithmAccelerationByHLS/blob/master/image/3.png)
 
 Figure 3 Processing plus dma transmission takes 34ms, which takes 653ms on average to process the same image under vs2015 where the hardware platform is i7-9750H 2.6GHz with 16GB RAM. The performance difference is nearly 20 times.
 
@@ -22,7 +22,7 @@ Figure 3 Processing plus dma transmission takes 34ms, which takes 653ms on avera
 
 Vivado Block Design：
 
-![](.\image\4.png)
+![](https://github.com/maxs-well/ImageAlgorithmAccelerationByHLS/blob/master/image/4.png)
 
 
 
