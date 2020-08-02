@@ -46,7 +46,7 @@ Not Work
 
 
 
-Thank to xilinx for organizing this event, and thank my teammate, Fu Guohang, who is not very familiar with hardware and has a lot of difficulties in learning but persisted. Thanks to my teammate, Yang Moyuan, who is still working during the day and insists on providing us with a lot of useful learning materials at night. Thanks to my teaching assistant colleague Li Yang, who has taken care of me a lot in class management
+Thanks to xilinx for organizing this event, and thank my teammate, Fu Guohang, who is not very familiar with hardware and has a lot of difficulties in learning but persisted. Thanks to my teammate, Yang Moyuan, who is still working during the day and insists on providing us with a lot of useful learning materials at night. Thanks to my teaching assistant colleague Li Yang, who has taken care of me a lot in class management
 
 
 
